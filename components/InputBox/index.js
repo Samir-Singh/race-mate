@@ -8,6 +8,7 @@ const InputBox = ({
   error,
   maxLength,
   onKeyDown,
+  width,
 }) => {
   return (
     <>
@@ -16,7 +17,9 @@ const InputBox = ({
         type={type}
         value={value}
         onChange={onChange}
-        className={`p-3 mt-2 border border-slate-300 outline-primary-color rounded ${className} ${
+        className={`p-3 ${
+          width ? width : "md:w-56"
+        } mt-2 border border-slate-300 outline-primary-color rounded ${className} ${
           error ? "!border-red-700" : ""
         }`}
         placeholder={placeholder}

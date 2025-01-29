@@ -19,7 +19,7 @@ const SelectInput = ({
         value={value}
         onChange={onChange}
         className={`mt-2 ${
-          width ? width : "w-56"
+          width ? width : "md:w-56"
         } outline-primary-color !shadow-none ${
           smallFont ? "text-sm" : "text-base"
         } ${className ? className : ""}`}
