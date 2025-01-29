@@ -1,7 +1,8 @@
-import { Geist, Geist_Mono, Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
+import { ConfigProvider } from "antd";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Geist, Geist_Mono, Montserrat, Open_Sans } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,9 +37,23 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${open_sans.className} antialiased bg-gray-50`}>
-        <Header />
-        {children}
-        <Footer />
+        <ConfigProvider
+          theme={{
+            token: {
+              fontFamily: "inherit",
+              colorPrimary: "#e96a3a",
+            },
+            components: {
+              Spin: {
+                colorPrimary: "white",
+              },
+            },
+          }}
+        >
+          <Header />
+          {children}
+          <Footer />
+        </ConfigProvider>
       </body>
     </html>
   );
