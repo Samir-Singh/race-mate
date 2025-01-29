@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-Favicon_-_32x32">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="Favicon_-_32x32" data-name="Favicon - 32x32" clip-path="url(#clip-Favicon_-_32x32)">
+    <rect width="32" height="32" fill="rgba(255,255,255,0)"/>
+    <g id="Group_51" data-name="Group 51">
+      <circle id="Ellipse_35" data-name="Ellipse 35" cx="16" cy="16" r="16" fill="#ea6a3a"/>
+      <g id="Group_50" data-name="Group 50" transform="translate(2.992 4.157)">
+        <path id="Path_145" data-name="Path 145" d="M2.425.528C4.745.267,11.9-.433,15.578.386c3.824,1.02,5.486,2.232,4.756,5.954s-10.147,11.545-12.21,13.1a1.2,1.2,0,0,1-.8.123,1.028,1.028,0,0,1-.67-1.575c.538-.775,4.035-4.835,5.265-6.736s3.094-5.48,1.043-6.849S7.573,2.756,1.147,3.111C-.4,3.049-.422,1.042,1.322.7A9.265,9.265,0,0,1,2.425.528Z" transform="translate(0 6.321) rotate(-3)" fill="#fafafa"/>
+        <ellipse id="Ellipse_31" data-name="Ellipse 31" cx="2.485" cy="2.688" rx="2.485" ry="2.688" transform="translate(20.469) rotate(45)" fill="#fafafa"/>
+      </g>
+    </g>
+  </g>
+</svg>
