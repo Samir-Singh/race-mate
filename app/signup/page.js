@@ -1,8 +1,8 @@
 "use client";
 
+import { Modal } from "antd";
 import Link from "next/link";
 import { useState } from "react";
-import { Modal } from "antd";
 import InputBox from "@/components/InputBox";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
 

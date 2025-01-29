@@ -1,6 +1,7 @@
 "use client";
 
 import "swiper/css";
+import Link from "next/link";
 import "swiper/css/scrollbar";
 import Image from "next/image";
 import { Autoplay } from "swiper/modules";
@@ -68,12 +69,15 @@ export default function Home() {
       </Swiper>
 
       <div className="md:p-10 p-5 flex flex-wrap justify-between gap-y-[3rem]">
-        <div className="cursor-pointer md:min-w-[150px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
+        <Link
+          href="/event-results"
+          className="md:min-w-[150px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color"
+        >
           <h2 className="text-center text-3xl">Race Results</h2>
           <p className="text-center mt-5 text-gray-500">
             Timing & Certificates
           </p>
-        </div>
+        </Link>
 
         <div className="cursor-pointer md:min-w-[150px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
           <h2 className="text-center text-3xl">Upcoming Events</h2>
