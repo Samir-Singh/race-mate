@@ -11,7 +11,7 @@ import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <div className="bg-[#343a40] text-white p-10 mt-10 pb-0">
+    <div className="bg-[#343a40] text-white md:p-10 mt-10 pb-0 p-5">
       <div className="flex flex-wrap justify-between">
         <div className="md:w-1/2 w-full">
           <Image

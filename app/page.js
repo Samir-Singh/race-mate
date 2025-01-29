@@ -1,10 +1,10 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import Image from "next/image";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Home() {
   return (
@@ -67,27 +67,27 @@ export default function Home() {
         ))}
       </Swiper>
 
-      <div className="p-10 flex flex-wrap justify-center gap-10">
-        <div className="cursor-pointer flex-1 min-w-[150px] max-w-[300px] shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
+      <div className="md:p-10 p-5 flex flex-wrap justify-between gap-y-[3rem]">
+        <div className="cursor-pointer md:min-w-[150px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
           <h2 className="text-center text-3xl">Race Results</h2>
           <p className="text-center mt-5 text-gray-500">
             Timing & Certificates
           </p>
         </div>
 
-        <div className="cursor-pointer flex-1 min-w-[150px] max-w-[300px] shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
+        <div className="cursor-pointer md:min-w-[150px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
           <h2 className="text-center text-3xl">Upcoming Events</h2>
           <p className="text-center mt-5 text-gray-500">
             Check your bib & Mark the date
           </p>
         </div>
 
-        <div className="cursor-pointer flex-1 min-w-[150px] max-w-[300px] shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
+        <div className="cursor-pointer md:min-w-[150px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
           <h2 className="text-center text-3xl">Event Registration</h2>
           <p className="text-center mt-5 text-gray-500">Let's start running</p>
         </div>
 
-        <div className="cursor-pointer flex-1 min-w-[150px] max-w-[300px] shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
+        <div className="cursor-pointer md:min-w-[150px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
           <h2 className="text-center text-3xl">Raceday Guide</h2>
           <p className="text-center mt-5 text-gray-500">
             A guide for every runner
@@ -96,7 +96,7 @@ export default function Home() {
       </div>
 
       <div className="flex items-center flex-col">
-        <div className="text-3xl w-[70%] text-center bg-primary-color rounded-md text-white p-2">
+        <div className="md:text-3xl text-xl md:w-[70%] w-[90%] text-center bg-primary-color rounded-md text-white p-2">
           Frequently Asked Questions
         </div>
 
@@ -104,10 +104,10 @@ export default function Home() {
           style={{ boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" }}
           className="md:w-[70%] w-[90%] mt-5 p-3 rounded flex flex-wrap"
         >
-          <div className="md:w-[50%] rounded overflow-hidden w-[100%]">
+          <div className="md:w-[50%] rounded overflow-hidden w-full">
             <Image src="/faq1.jpg" width={1000} height={1000} alt="faq1" />
           </div>
-          <div className="md:w-[50%] md:pl-10 md:mt-0 mt-5 pl-0 w-[100%]">
+          <div className="md:w-[50%] md:pl-10 md:mt-0 mt-5 pl-0 w-full">
             <h2 className="text-3xl">What is a BIB?</h2>
             <p className="mt-5 text-gray-600 text-xl">
               In runners world a bib is a sheet of paper with an e-tag attached
@@ -122,7 +122,7 @@ export default function Home() {
           style={{ boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" }}
           className="md:w-[70%] w-[90%] mt-5 p-3 rounded flex flex-wrap"
         >
-          <div className="md:w-[50%] w-[100%]">
+          <div className="md:w-[50%] w-full">
             <h2 className="text-3xl">How to put on a Race Bib?</h2>
             <p className="mt-5 text-gray-600 text-xl">
               With the help of safety pins carefully pin it in all four corners
@@ -130,7 +130,7 @@ export default function Home() {
               before piercing the Tshirt with a safety pin!
             </p>
           </div>
-          <div className="md:w-[50%] w-[100%] rounded overflow-hidden md:mt-0 mt-5">
+          <div className="md:w-[50%] w-full rounded overflow-hidden md:mt-0 mt-5">
             <Image src="/faq2.jpg" width={1000} height={1000} alt="faq1" />
           </div>
         </div>
@@ -139,10 +139,10 @@ export default function Home() {
           style={{ boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" }}
           className="md:w-[70%] w-[90%] mt-5 p-3 rounded flex flex-wrap"
         >
-          <div className="md:w-[50%] rounded overflow-hidden w-[100%]">
+          <div className="md:w-[50%] rounded overflow-hidden w-full">
             <Image src="/faq3.jpg" width={1000} height={1000} alt="faq1" />
           </div>
-          <div className="md:w-[50%] md:pl-10 md:mt-0 mt-5 pl-0 w-[100%]">
+          <div className="md:w-[50%] md:pl-10 md:mt-0 mt-5 pl-0 w-full">
             <h2 className="text-3xl">Do and don'ts with Race Bib</h2>
             <p className="mt-5 text-gray-600 text-xl">
               In order to receive an accurate time please confirm your bib is:
