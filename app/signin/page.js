@@ -20,6 +20,7 @@ const SignIn = () => {
             type="email"
             placeholder="Email"
             className="mt-5 border-slate-500 w-full"
+            width="w-full"
           />
         </div>
 
@@ -28,6 +29,7 @@ const SignIn = () => {
             type={showPassword ? "text" : "password"}
             placeholder="Password"
             className="mt-5 border-slate-500 w-full"
+            width="w-full"
           />
           <div
             onClick={() => setShowPassword((prev) => !prev)}

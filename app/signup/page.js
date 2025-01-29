@@ -31,6 +31,7 @@ const SignUp = () => {
             type="text"
             placeholder="Name"
             className="mt-5 border-slate-500 w-full"
+            width="w-full"
           />
         </div>
 
@@ -39,6 +40,7 @@ const SignUp = () => {
             type="email"
             placeholder="Email"
             className="mt-5 border-slate-500 w-full"
+            width="w-full"
           />
         </div>
 
@@ -47,6 +49,7 @@ const SignUp = () => {
             type="number"
             placeholder="Mobile Number"
             className="mt-5 border-slate-500 w-full"
+            width="w-full"
           />
         </div>
 
@@ -55,6 +58,7 @@ const SignUp = () => {
             type={showPassword ? "text" : "password"}
             placeholder="Password"
             className="mt-5 border-slate-500 w-full"
+            width="w-full"
           />
           <div
             onClick={() => setShowPassword((prev) => !prev)}
