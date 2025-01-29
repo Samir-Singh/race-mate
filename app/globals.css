@@ -29,3 +29,9 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+.ant-tabs-tab,
+.ant-tabs-tab-btn {
+  padding-top: 0 !important;
+  display: flex !important;
+}
