@@ -4,10 +4,11 @@ import { Tabs } from "antd";
 import Image from "next/image";
 import { MdVerified, MdEventAvailable, MdHistory } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
+import Profile from "@/components/Profile";
 
 const MyProfile = () => {
   return (
-    <div className="flex flex-wrap justify-center md:p-10 md:px-36 p-5 gap-10">
+    <div className="flex flex-wrap justify-center md:p-10 md:px-20 p-5 gap-10 items-start">
       <div className="md:w-1/4 w-full border-slate-400 border p-5 flex flex-col items-center">
         <div className="w-[150px] h-[150px] border border-primary-color rounded-full relative cursor-pointer overflow-hidden">
           <Image
@@ -28,6 +29,9 @@ const MyProfile = () => {
       <div className="md:w-3/5 w-full">
         <Tabs
           defaultActiveKey="1"
+          tabBarStyle={{
+            margin: "0",
+          }}
           items={[
             {
               key: 1,
@@ -46,7 +50,7 @@ const MyProfile = () => {
             {
               key: 3,
               label: "My Profile",
-              children: "My Profile",
+              children: <Profile />,
               icon: <FaRegUser className="text-xl" />,
             },
           ]}
