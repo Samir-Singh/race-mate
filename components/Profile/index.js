@@ -87,8 +87,8 @@ const Profile = () => {
         <div className="md:w-[31%] w-full mt-5 md:mt-0">
           <p className="font-semibold">
             Pin<span className="text-red-500">*</span>
-            <Input placeholder="Enter Pin-Code" />
           </p>
+          <Input placeholder="Enter Pin-Code" />
         </div>
         <div className="md:w-[31%] w-full mt-5 md:mt-0">
           <p className="font-semibold">
