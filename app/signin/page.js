@@ -38,9 +38,11 @@ const SignIn = () => {
             {showPassword ? <IoMdEye /> : <IoMdEyeOff />}
           </div>
           <p className="flex justify-end mt-2">
-            <span className="text-sm text-primary-color cursor-pointer font-medium hover:underline">
-              Forget Password
-            </span>
+            <Link href="/forgotpassword">
+              <span className="text-sm text-primary-color cursor-pointer font-medium hover:underline">
+                Forget Password
+              </span>
+            </Link>
           </p>
         </div>
 

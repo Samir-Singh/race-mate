@@ -3,25 +3,25 @@ const { TextArea } = Input;
 
 const Profile = () => {
   return (
-    <div className="bg-white p-5 rounded shadow-md">
+    <div className="bg-white p-5 rounded shadow-md profile">
       <div className="flex justify-between flex-wrap items-center">
         <div className="md:w-[31%] w-[100%]">
           <p className="font-semibold">
             Name<span className="text-red-500">*</span>
           </p>
-          <Input placeholder="Enter Name" />
+          <Input placeholder="Enter Name" className="p-2" />
         </div>
         <div className="md:w-[31%] w-[100%] mt-5 md:mt-0">
           <p className="font-semibold">
             Email<span className="text-red-500">*</span>
           </p>
-          <Input placeholder="Enter Email" />
+          <Input placeholder="Enter Email" className="p-2" />
         </div>
         <div className="md:w-[31%] w-[100%] mt-5 md:mt-0">
           <p className="font-semibold">
             Mobile<span className="text-red-500">*</span>
           </p>
-          <Input placeholder="Enter Mobile" />
+          <Input placeholder="Enter Mobile" className="p-2" />
         </div>
       </div>
 
@@ -57,7 +57,7 @@ const Profile = () => {
           <p className="font-semibold">
             Date of birth<span className="text-red-500">*</span>
           </p>
-          <DatePicker className="w-full" />
+          <DatePicker className="w-full p-2" />
         </div>
 
         <div className="md:w-[31%] w-full mt-5 md:mt-0">
@@ -82,13 +82,13 @@ const Profile = () => {
           <p className="font-semibold">
             City<span className="text-red-500">*</span>
           </p>
-          <Input placeholder="Enter City" />
+          <Input placeholder="Enter City" className="p-2" />
         </div>
         <div className="md:w-[31%] w-full mt-5 md:mt-0">
           <p className="font-semibold">
             Pin<span className="text-red-500">*</span>
           </p>
-          <Input placeholder="Enter Pin-Code" />
+          <Input placeholder="Enter Pin-Code" className="p-2" />
         </div>
         <div className="md:w-[31%] w-full mt-5 md:mt-0">
           <p className="font-semibold">

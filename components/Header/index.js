@@ -8,12 +8,7 @@ const Header = () => {
   return (
     <div className="flex sticky top-0 left-0 right-0 bg-[#343a40] p-5 md:px-10 px-5 items-center justify-between z-10">
       <Link href="/">
-        <Image
-          src="https://s3.ap-south-1.amazonaws.com/racemate.in/assets/Website+Logo+Header-190x40+%E2%80%93+White+Text.svg"
-          width={200}
-          height={200}
-          alt="Racemate India"
-        />
+        <Image src="/logo.svg" width={200} height={200} alt="Racemate India" />
       </Link>
 
       <div className="md:flex gap-5 hidden">

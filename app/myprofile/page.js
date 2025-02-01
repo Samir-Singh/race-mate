@@ -2,9 +2,9 @@
 
 import { Tabs } from "antd";
 import Image from "next/image";
-import { MdVerified, MdEventAvailable, MdHistory } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
 import Profile from "@/components/Profile";
+import { MdVerified, MdEventAvailable, MdHistory } from "react-icons/md";
 
 const MyProfile = () => {
   return (

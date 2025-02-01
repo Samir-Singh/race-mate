@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Swiper
         slidesPerView={1}
         loop={true}
@@ -21,39 +21,39 @@ export default function Home() {
         {[
           {
             id: 1,
-            img: "https://ts-production.imgix.net/images/5b01493b-93b6-45c5-b879-1ba9cc731de2.jpg",
+            img: "/slider_image_1.jpg",
           },
           {
             id: 2,
-            img: "https://ts-production.imgix.net/images/635d5e94-1b4d-4da4-8c72-9d80d04dea90.jpg",
+            img: "/slider_image_2.jpg",
           },
           {
             id: 3,
-            img: "https://ts-production.imgix.net/images/cb23f444-6183-4dee-a799-7a64307db820.jpg",
+            img: "/slider_image_3.jpg",
           },
           {
             id: 4,
-            img: "https://ts-production.imgix.net/images/f1b9b415-fa65-41cf-bf72-c04f4a9a2a3c.jpg",
+            img: "/slider_image_4.jpg",
           },
           {
             id: 5,
-            img: "https://ts-production.imgix.net/images/0aed0bb6-e462-4d3c-bc00-f45ab2529bde.jpg",
+            img: "/slider_image_5.jpg",
           },
           {
             id: 6,
-            img: "https://ts-production.imgix.net/images/0ff21215-40c0-45ab-a86c-2494f19ea1d3.jpg",
+            img: "/slider_image_6.jpg",
           },
           {
             id: 7,
-            img: "https://ts-production.imgix.net/images/2cb6373a-79e9-4b26-84b0-6caade287269.jpg",
+            img: "/slider_image_7.jpg",
           },
           {
             id: 8,
-            img: "https://ts-production.imgix.net/images/c2b4bbf8-47dc-47a5-8d93-ec8747984cbe.jpg",
+            img: "/slider_image_8.jpg",
           },
           {
             id: 9,
-            img: "https://ts-production.imgix.net/images/8d872a87-bbae-4ded-bda7-61071ce29732.jpg",
+            img: "/slider_image_9.jpg",
           },
         ]?.map((item) => (
           <SwiperSlide key={item?.id}>
@@ -68,10 +68,10 @@ export default function Home() {
         ))}
       </Swiper>
 
-      <div className="md:p-10 p-5 flex flex-wrap justify-between gap-y-[3rem]">
+      <div className="md:p-10 p-5 flex flex-wrap justify-between gap-y-[3rem] gap-1">
         <Link
           href="/event-results"
-          className="md:min-w-[150px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color"
+          className="md:w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color"
         >
           <h2 className="text-center text-3xl">Race Results</h2>
           <p className="text-center mt-5 text-gray-500">
@@ -79,19 +79,22 @@ export default function Home() {
           </p>
         </Link>
 
-        <div className="cursor-pointer md:min-w-[150px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
+        <Link
+          href="/upcoming-events"
+          className="cursor-pointer md:w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color"
+        >
           <h2 className="text-center text-3xl">Upcoming Events</h2>
           <p className="text-center mt-5 text-gray-500">
             Check your bib & Mark the date
           </p>
-        </div>
+        </Link>
 
-        <div className="cursor-pointer md:min-w-[150px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
+        <div className="cursor-pointer md:w-[300px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
           <h2 className="text-center text-3xl">Event Registration</h2>
           <p className="text-center mt-5 text-gray-500">Let's start running</p>
         </div>
 
-        <div className="cursor-pointer md:min-w-[150px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
+        <div className="cursor-pointer md:w-[300px] md:max-w-[300px] w-full shadow-md rounded p-5 border-b-4 border-t-4 border-b-primary-color border-t-primary-color">
           <h2 className="text-center text-3xl">Raceday Guide</h2>
           <p className="text-center mt-5 text-gray-500">
             A guide for every runner
@@ -164,6 +167,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
