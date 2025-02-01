@@ -35,7 +35,7 @@ const EventResults = () => {
         <InputBox placeholder="Enter Event Name" className="p-[6px] w-full" />
       </div>
 
-      <div className="flex flex-wrap justify-center items-center gap-10 gap-y-[3rem] mt-5">
+      <div className="flex flex-wrap lg:justify-center md:justify-center items-center lg:gap-10 md:gap-5 gap-y-[3rem] mt-5">
         {[
           {
             id: 1,
@@ -61,10 +61,17 @@ const EventResults = () => {
             date: "Sunday 29 Dec 2024",
             location: "Gurgaon",
           },
+          {
+            id: 5,
+            name: "Karma Lakelands Half Marathon",
+            date: "Sunday 29 Dec 2024",
+            location: "Gurgaon",
+          },
         ]?.map((item) => (
           <div
+            key={item?.id}
             style={{ boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" }}
-            className="rounded-xl overflow-hidden relative sm:w-80 w-full"
+            className="rounded-xl overflow-hidden relative md:w-52 lg:w-60 w-full"
           >
             <Image
               src="/faq2.jpg"
