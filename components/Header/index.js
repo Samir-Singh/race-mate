@@ -20,10 +20,12 @@ const Header = () => {
           <FaQuestion />
           FAQ
         </span>
-        <span className="flex items-center text-lg text-gray-400 cursor-pointer hover:text-white gap-1">
-          <IoCall />
-          Contact
-        </span>
+        <Link href="/contactus">
+          <span className="flex items-center text-lg text-gray-400 cursor-pointer hover:text-white gap-1">
+            <IoCall />
+            Contact
+          </span>
+        </Link>
       </div>
 
       <Link href="/signin">

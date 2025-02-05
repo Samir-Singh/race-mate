@@ -2,23 +2,7 @@ import "./globals.css";
 import { ConfigProvider } from "antd";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Geist, Geist_Mono, Montserrat, Open_Sans } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const montserrat = Montserrat({
-  weight: ["400", "500", "700"],
-  subsets: ["latin"],
-  display: "swap",
-});
+import { Open_Sans, Poppins } from "next/font/google";
 
 const open_sans = Open_Sans({ subsets: ["latin"] });
 

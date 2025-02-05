@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaHome } from "react-icons/fa";
-import { GoChevronRight } from "react-icons/go";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import { GoChevronRight } from "react-icons/go";
 
 const UpcomingEvents = () => {
   return (
@@ -59,7 +59,7 @@ const UpcomingEvents = () => {
               "https://ts-production.imgix.net/images/cb23f444-6183-4dee-a799-7a64307db820.jpg",
           },
         ]?.map((item) => (
-          <div key={item.id} className="lg:w-1/3 md:w-1/2 w-full px-3 mt-5">
+          <div key={item.id} className="lg:w-1/3 md:w-1/2 w-full md:px-3 mt-5">
             {/* Ensure all cards have the same height */}
             <div
               className="rounded-lg overflow-hidden hover:-translate-y-3 transition-all duration-500 h-full flex flex-col"
@@ -69,7 +69,7 @@ const UpcomingEvents = () => {
                 src={item?.image}
                 width={500}
                 height={500}
-                className="h-48 w-full object-cover"
+                className="h-48 w-full"
                 alt="race_card_img"
               />
               <div className="p-5 flex-grow flex flex-col">

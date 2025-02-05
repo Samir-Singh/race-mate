@@ -1,3 +1,5 @@
+"use client";
+
 import { Input, DatePicker, Select } from "antd";
 const { TextArea } = Input;
 
